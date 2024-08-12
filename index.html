@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
+            background: #fff;
             color: #333;
             margin: 0;
             padding: 0;
@@ -18,85 +18,49 @@
         .container {
             max-width: 900px;
             margin: 50px auto;
-            padding: 20px;
+            padding: 40px;
             background: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);*/
             border-radius: 8px;
         }
 
         .header {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .header img {
             border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            margin-right: 30px;
             border: 3px solid #007bff;
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
             margin-bottom: 10px;
-            color: #444;
-            border-bottom: 3px solid #007bff;
-            display: inline-block;
-        }
-
-        h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            color: #555;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #666;
-        }
-
-        p, li {
-            font-size: 1em;
-            margin: 5px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #007bff;
-        }
-
-        i {
-            color: #555;
-            margin-right: 8px;
-            font-size: 18px;
-        }
-
-        a:hover i {
-            color: #0056b3;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .honors-list, .publications-list {
-            list-style-type: disc;
-            padding-left: 20px;
             color: #333;
         }
 
-        .honors-list li, .publications-list li {
-            margin-bottom: 10px;
+        h2 {
+            font-size: 2.2em;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-top: 30px;
         }
 
-        .publication-year {
-            font-weight: bold;
-            color: #007bff;
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        p, li {
+            font-size: 1.1em;
+            margin: 8px 0;
         }
 
         .contact-info {
@@ -105,14 +69,46 @@
         }
 
         .contact-info a {
-            display: block;
-            margin-bottom: 5px;
+            display: inline-block;
+            margin-right: 15px;
+            color: #007bff;
+            text-decoration: none;
         }
-        
+
         .contact-info a:hover {
             text-decoration: underline;
         }
-        
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .work-experience {
+            margin-bottom: 20px;
+        }
+
+        .work-experience h3 {
+            margin-bottom: 5px;
+        }
+
+        .work-date {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 5px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #e9ecef;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
@@ -125,44 +121,50 @@
             </div>
         </div>
         
-        <p class="contact-info">
+        <div class="contact-info">
             <a href="mailto:hienvq23@gmail.com"><i class="fas fa-envelope"></i> hienvq23@gmail.com</a>
             <a href="https://github.com/Neih4207" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             <a href="https://www.linkedin.com/in/neihvq23" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://scholar.google.com/citations?user=tp3X_iQAAAAJ&hl=en&oi=ao" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-        </p>
+        </div>
 
         <section class="section">
             <h2>Education</h2>
-            <h3>B.S. in Computer Engineering</h3>
-            <p><strong>School of Information and Communication Technology (<a href="https://soict.hust.edu.vn/en/" target="_blank">SoICT</a>), Hanoi University of Science and Technology (HUST)</strong></p>
-            <p>Ha Noi, Viet Nam | Aug. 2018 - Mar. 2023</p>
+            <h3>Hanoi University of Science and Technology (HUST)</h3>
+            <p>Aug. 2018 - Mar. 2023</p>
             <ul>
-                <li>Major in Data Science, Artificial Intelligence.</li>
-                <li>Researcher at MSO lab.</li>
+                <li>B.S. in Computer Engineering - Major in Data Science, Artificial Intelligence</li>
+                <li>Researcher/Assistant at Modelling, Simulation, and Optimization Laboratory, advised by Associate Professor <a href="https://users.soict.hust.edu.vn/binhht/">Huynh Thi Thanh Binh</a></li>
             </ul>
         </section>
 
-
         <section class="section">
             <h2>Work Experience</h2>
-            <ul>
-                <li><strong>Genestory Joint Stock Company</strong> - Apr. 2022 ‑ Aug. 2024</li>
-                <li><strong>Vingroup Big Data Institute</strong> - Jul. 2021 ‑ Mar. 2022</li>
-            </ul>
+            
+            <div class="work-experience">
+                <h3>Bioinformatics/AI Scientist - Genestory Joint Stock Company</h3>
+                <div class="work-date">Apr. 2022 - Present | Hanoi, Vietnam</div>
+                <p>Developed and implemented advanced machine learning models for cancer risk prediction, pharmacogenomics analysis, and various genomics projects.</p>
+            </div>
+
+            <div class="work-experience">
+                <h3>AI Engineer - Vingroup Big Data Institute</h3>
+                <div class="work-date">Jul. 2021 - Mar. 2022 | Hanoi, Vietnam</div>
+                <p>Designed and implemented large-scale genomic databases and developed machine learning algorithms for variant annotation and HLA imputation.</p>
+            </div>
         </section>
 
         <section class="section">
             <h2>Honors & Awards</h2>
             
             <h3>International</h3>
-            <ul class="honors-list">
+            <ul>
+                <li>Third Prize, The 2020 ICPC Asia Can Tho Regional Contest - Can Tho, Viet Nam</li>
                 <li>Third Prize, Competition on Electric Vehicle Routing Problem, 2020 IEEE World Congress on Computational Intelligence (WCCI 2020) - Glasgow, UK</li>
             </ul>
 
             <h3>Domestic</h3>
-            <ul class="honors-list">
-                <li>Third Prize, The 2020 ICPC Asia Can Tho Regional Contest - Can Tho, Viet Nam</li>
+            <ul>
                 <li>Third Prize, Competitive Programming Contest - Procon (kyogi) 2021 organized by VAIP - Vietnam Association for Information Processing - FPT, Viet Nam</li>
                 <li>Second Prize, Competitive Programming Contest - Procon (kyogi) 2020 organized by VAIP - Vietnam Association for Information Processing - Can Tho, Viet Nam</li>
                 <li>Second Prize, National Olympiad in Informatics 2019 - Da Nang, Viet Nam</li>
@@ -174,14 +176,14 @@
         <section class="section">
             <h2>Publications</h2>
             <h3>Journal Articles</h3>
-            <ul class="publications-list">
+            <ul>
                 <li><span class="publication-year">2024:</span> Binh Minh Nguyen, Thieu Nguyen, <strong>Quoc-Hien Vu</strong>, Huy Hung Tran, Hoang Hai Tran, Binh Huynh Thi Thanh, Van-Dang Tran, "Dholes Hunting - A Multi-Local Search Algorithm Using Gradient Approximation and Its Application for Blockchain Consensus Problem", IEEE Access (<strong>Q1 - IEEE Access</strong>).</li>
                 <li><span class="publication-year">2023:</span> Binh Minh Nguyen, Thieu Nguyen, <strong>Quoc-Hien Vu</strong>, Huy Hung Tran, Hiep Vo, Do Bao Son, Huynh Thi Thanh Binh, Shui Yu, Zongda Wu, "A Novel Nature-inspired Algorithm for Optimal Task Scheduling in Fog-Cloud Blockchain System", IEEE Internet of Things Journal (<strong>Q1 - IoTJ</strong>).</li>
                 <li><span class="publication-year">2022:</span> <strong>Quoc-Hien Vu</strong>, Cong Dao Tran, Thi Thanh Binh Huynh, "A greedy search based evolutionary algorithm for electric vehicle routing problem", Applied Intelligence (<strong>Q1 - APIN</strong>).</li>
             </ul>
             
             <h3>Conference Papers</h3>
-            <ul class="publications-list">
+            <ul>
                 <li><span class="publication-year">2021:</span> Thieu Nguyen, Thang Nguyen, <strong>Quoc-Hien Vu</strong>, Thi Thanh Binh Huynh, Binh Minh Nguyen, "Multi-objective Sparrow Search Optimization for Task Scheduling in Fog-Cloud-Blockchain Systems", IEEE SCC 2021 PC Chairs (<strong>SCC Conference</strong>).</li>
             </ul>
         </section>
