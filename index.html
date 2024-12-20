@@ -6,108 +6,153 @@
     <title>Vu Quoc Hien - CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --light-bg: #f3f4f6;
+            --border-color: #e5e7eb;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #fff;
-            color: #333;
+            background: var(--light-bg);
+            color: var(--text-color);
             margin: 0;
-            padding: 0;
+            padding: 20px;
             line-height: 1.6;
         }
 
         .container {
-            max-width: 900px;
-            margin: 50px auto;
+            max-width: 1000px;
+            margin: 0 auto;
             padding: 40px;
             background: #fff;
-            /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);*/
-            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
         }
 
         .header {
             display: flex;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
         }
 
         .header img {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-right: 30px;
-            border: 3px solid #007bff;
+            width: 180px;
+            height: 180px;
+            margin-right: 40px;
+            border: 4px solid var(--primary-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            font-size: 2.8em;
-            margin-bottom: 10px;
-            color: #333;
+        .header-content h1 {
+            font-size: 3em;
+            margin: 0 0 10px 0;
+            color: var(--text-color);
+            line-height: 1.2;
         }
 
-        h2 {
-            font-size: 2.2em;
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-
-        h3 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            color: #555;
-        }
-
-        p, li {
-            font-size: 1.1em;
-            margin: 8px 0;
+        .header-content p {
+            font-size: 1.4em;
+            color: var(--primary-color);
+            margin: 0;
+            font-weight: 500;
         }
 
         .contact-info {
-            font-size: 1.1em;
-            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
         }
 
         .contact-info a {
-            display: inline-block;
-            margin-right: 15px;
-            color: #007bff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-color);
             text-decoration: none;
+            padding: 8px 16px;
+            background: var(--light-bg);
+            border-radius: 6px;
+            transition: all 0.3s ease;
         }
 
         .contact-info a:hover {
-            text-decoration: underline;
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
         }
 
-        .section {
-            margin-bottom: 40px;
+        h2 {
+            font-size: 1.8em;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin: 40px 0 20px 0;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: var(--text-color);
+            margin: 20px 0 10px 0;
         }
 
         .work-experience {
+            border-radius: 8px;
             margin-bottom: 20px;
         }
 
         .work-experience h3 {
-            margin-bottom: 5px;
+            margin-top: 0;
+            color: var(--primary-color);
         }
 
         .work-date {
             font-style: italic;
-            color: #777;
-            margin-bottom: 5px;
+            color: #666;
+            margin-bottom: 10px;
         }
 
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        ul {
+            padding-left: 20px;
         }
 
-        .skill {
-            background: #e9ecef;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 0.9em;
+        li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .publication-year {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header img {
+                margin: 0 0 20px 0;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .contact-info {
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -115,54 +160,51 @@
     <div class="container">
         <div class="header">
             <img src="https://avatars.githubusercontent.com/u/69629357?v=4" alt="Vu Quoc Hien's Profile Picture">
-            <div>
+            <div class="header-content">
                 <h1>Vu Quoc Hien</h1>
                 <p>Data/AI Scientist</p>
+                <div class="contact-info">
+                    <a href="mailto:hienvq23@gmail.com"><i class="fas fa-envelope"></i> hienvq23@gmail.com</a>
+                    <a href="https://github.com/Neih4207" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/neihvq23" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=tp3X_iQAAAAJ&hl=en&oi=ao" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                </div>
             </div>
         </div>
-        
-        <div class="contact-info">
-            <a href="mailto:hienvq23@gmail.com"><i class="fas fa-envelope"></i> hienvq23@gmail.com</a>
-            <a href="https://github.com/Neih4207" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/neihvq23" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=tp3X_iQAAAAJ&hl=en&oi=ao" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-        </div>
 
-        <section class="section">
+        <section>
             <h2>Education</h2>
             <h3>Hanoi University of Science and Technology (HUST)</h3>
             <p>Aug. 2018 - Mar. 2023</p>
             <ul>
                 <li>B.S. in Computer Engineering - Major in Data Science, Artificial Intelligence</li>
-                <li>Researcher/Assistant at Modelling, Simulation, and Optimization Laboratory, advised by Associate Professor <a href="https://users.soict.hust.edu.vn/binhht/">Huynh Thi Thanh Binh</a></li>
+                <li>Researcher/Assistant at Modelling, Simulation, and Optimization Laboratory, advised by Associate Professor <a href="https://scholar.google.com/citations?user=vJYe5lkAAAAJ&hl=en&oi=ao">Huynh Thi Thanh Binh</a></li>
             </ul>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Work Experience</h2>
-            
             <div class="work-experience">
-                <h3>Generative AI Engineer - FPT Software AI Center</h3>
+                <h4>AI Tech Lead - FPT Software AI Center</h4>
                 <div class="work-date">Sep 2024 - Present | Hanoi, Vietnam</div>
                 <p>Collaborating with team members to design and implement chatbots and virtual assistants. Conducting research on multi-agent systems and developing multi-agent-based recommendation and suggestion systems. Optimizing RAG pipelines, SQL agents, and analytics solutions to ensure system security, code quality, agent behavior, and performance.</p>
             </div>
 
             <div class="work-experience">
-                <h3>Bioinformatics/AI Scientist - Genestory Joint Stock Company</h3>
+                <h4>Bioinformatics/AI Scientist - Genestory JSC</h4>
                 <div class="work-date">Apr. 2022 - Sep. 2024 | Hanoi, Vietnam</div>
                 <p>Developed and implemented advanced machine learning and statistic models for cancer risk prediction, pharmacogenomics analysis, and various genomics projects.</p>
             </div>
 
             <div class="work-experience">
-                <h3>AI Engineer - Vingroup Big Data Institute</h3>
+                <h4>AI Engineer - Vingroup Big Data Institute</h4>
                 <div class="work-date">Jul. 2021 - Mar. 2022 | Hanoi, Vietnam</div>
                 <p>Designed and implemented large-scale genomic databases and developed deep learning algorithms for variant annotation and HLA imputation.</p>
             </div>
         </section>
 
-        <section class="section">
-            <h2>Honors & Awards</h2>
-            
+        <section>
+            <h2>Selected Honors & Awards</h2>
             <h3>International</h3>
             <ul>
                 <li>Third Prize, The 2020 ICPC Asia Can Tho Regional Contest - Can Tho, Viet Nam</li>
@@ -174,13 +216,11 @@
                 <li>Third Prize, Competitive Programming Contest - Procon (kyogi) 2021 organized by VAIP - Vietnam Association for Information Processing - FPT, Viet Nam</li>
                 <li>Second Prize, Competitive Programming Contest - Procon (kyogi) 2020 organized by VAIP - Vietnam Association for Information Processing - Can Tho, Viet Nam</li>
                 <li>Second Prize, National Olympiad in Informatics 2019 - Da Nang, Viet Nam</li>
-                <li>Consolation Prize, National Olympiad in Informatics 2018 - Ha Noi, Viet Nam</li>
-                <li>Third Prize, Excellent Students in Informatics at Provincial Round 2017 - 2018 - Hung Yen, Viet Nam</li>
             </ul>
         </section>
 
-        <section class="section">
-            <h2>Publications</h2>
+        <section>
+            <h2>Selected Publications</h2>
             <h3>International Journal</h3>
             <ul>
                 <li><span class="publication-year">2024:</span> Binh Minh Nguyen, Thieu Nguyen, <strong>Quoc-Hien Vu</strong>, Huy Hung Tran, Hoang Hai Tran, Binh Huynh Thi Thanh, Van-Dang Tran, "Dholes Hunting - A Multi-Local Search Algorithm Using Gradient Approximation and Its Application for Blockchain Consensus Problem", IEEE Access (<strong>Q1 - IEEE Access</strong>).</li>
