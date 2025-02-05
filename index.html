@@ -102,6 +102,12 @@
             margin: 20px 0 10px 0;
         }
 
+        h4 {
+            font-size: 1.3em;
+            color: var(--text-color);
+            margin: 20px 0 10px 0;
+        }
+
         .work-experience {
             border-radius: 8px;
             margin-bottom: 20px;
@@ -158,6 +164,7 @@
 </head>
 <body>
     <div class="container">
+        <!-- Header Section -->
         <div class="header">
             <img src="https://avatars.githubusercontent.com/u/69629357?v=4" alt="Vu Quoc Hien's Profile Picture">
             <div class="header-content">
@@ -172,65 +179,111 @@
             </div>
         </div>
 
+        <!-- Education Section -->
         <section>
             <h2>Education</h2>
             <h3>Hanoi University of Science and Technology (HUST)</h3>
             <p>Aug. 2018 - Mar. 2023</p>
             <ul>
-                <li>B.S. in Computer Engineering - Major in Data Science, Artificial Intelligence</li>
-                <li>Researcher/Assistant at Modelling, Simulation, and Optimization Laboratory, advised by Associate Professor <a href="https://scholar.google.com/citations?user=vJYe5lkAAAAJ&hl=en&oi=ao">Huynh Thi Thanh Binh</a></li>
+                <li>B.S. in Computer Engineering, specializing in Data Science and AI</li>
+                <li>Research Assistant at the Modeling, Simulation, and Optimization Laboratory, supervised by Associate Professor <a href="https://scholar.google.com/citations?user=vJYe5lkAAAAJ&hl=en&oi=ao">Huynh Thi Thanh Binh</a></li>
             </ul>
         </section>
 
+        <!-- Work Experience Section -->
         <section>
             <h2>Work Experience</h2>
+
             <div class="work-experience">
-                <h4>AI Tech Lead - FPT Software AI Center</h4>
+                <h4>AI Engineer - FPT Software AI Center</h4>
                 <div class="work-date">Sep 2024 - Present | Hanoi, Vietnam</div>
-                <p>Collaborating with team members to design and implement chatbots and virtual assistants. Conducting research on multi-agent systems and developing multi-agent-based recommendation and suggestion systems. Optimizing RAG pipelines, SQL agents, and analytics solutions to ensure system security, code quality, agent behavior, and performance.</p>
+                <p>
+                    <strong><i>Document Q&amp;A</i></strong><br>
+                    Led the design and development of an advanced tool capable of analyzing complex PDF documents containing tables, diagrams, images, and text. Utilized a variety of RAG pipelines and Microsoft Azure services to enable dynamic querying and insightful data extraction. 
+                </p>
+                <p>
+                    <strong><i>GenAI Chatbot</i></strong><br>
+                    Engineered an AI‑driven chatbot utilizing Retrieval‑Augmented Generation (RAG). Introduced a weighted embedding method that significantly boosted model accuracy, improving defect detection and pattern recognition. This solution accelerates troubleshooting, refines diagnostic processes, and enhances knowledge retrieval across product lines.
+                </p>
             </div>
 
             <div class="work-experience">
                 <h4>Bioinformatics/AI Scientist - Genestory JSC</h4>
                 <div class="work-date">Apr. 2022 - Sep. 2024 | Hanoi, Vietnam</div>
-                <p>Developed and implemented advanced machine learning and statistic models for cancer risk prediction, pharmacogenomics analysis, and various genomics projects.</p>
+                <p>
+                    <strong><i>Cancer‑Risk Prediction</i></strong><br>
+                    Strengthened the Pharmacogenomics (PGx) Database by creating a graph-based platform in Neo4j for gene‑drug interaction data. This architecture streamlined pharmacogenomics analysis, achieving a 4x increase in speed and easy scalability.
+                </p>
+                <p>
+                    <strong><i>LLM‑RAG Chatbot</i></strong><br>
+                    Headed the development of an LLM‑RAG chatbot designed to enhance internal consulting and customer service. Combined question answering, summarization, and information retrieval by maintaining customer genetic reports and website data in a vector database, significantly reducing manual lookup time.
+                </p>
+                <p>
+                    <strong><i>SCAR Project</i></strong><br>
+                    Deployed Severe Cutaneous Adverse Drug Reaction (SCARS) project to mitigate patient risk. Screened for harmful genes/variants associated with SCARs for Allopurinol and Carbamazepine prescriptions. Applied machine learning (Random Forest, SVM, Gradient Boosting Tree) to develop a predictive model for adverse reactions, achieving accuracies of 96.9% for Allopurinol and 81.2% for Carbamazepine.
+                </p>
             </div>
 
             <div class="work-experience">
                 <h4>AI Engineer - Vingroup Big Data Institute</h4>
                 <div class="work-date">Jul. 2021 - Mar. 2022 | Hanoi, Vietnam</div>
-                <p>Designed and implemented large-scale genomic databases and developed deep learning algorithms for variant annotation and HLA imputation.</p>
+                <p>
+                    <strong><i>Human Leukocyte Antigen (HLA) Imputation</i></strong><br>
+                    Devised and implemented a fusion-logic neural network model for HLA imputation among Vietnamese patient cohorts, achieving high accuracy (88‑99%). This solution was extensively deployed, delivering significant clinical value for patient care.
+                </p>
+                <p>
+                    <strong><i>Variant Annotation – EML</i></strong><br>
+                    Architected a 5TB PostgreSQL database housing over 9 billion genetic variants. Leveraged ensemble machine learning for comprehensive genomic variant analysis and annotation, increasing precision in patient genetic reports.
+                </p>
             </div>
         </section>
 
+        <!-- Honors & Awards Section -->
         <section>
             <h2>Selected Honors & Awards</h2>
             <h3>International</h3>
             <ul>
-                <li>Third Prize, The 2020 ICPC Asia Can Tho Regional Contest - Can Tho, Viet Nam</li>
-                <li>Third Prize, Competition on Electric Vehicle Routing Problem, 2020 IEEE World Congress on Computational Intelligence (WCCI 2020) - Glasgow, UK</li>
+                <li>Third Prize, 2020 ICPC Asia Can Tho Regional Contest – Can Tho, Vietnam</li>
+                <li>Third Prize, Electric Vehicle Routing Problem Competition, 2020 IEEE World Congress on Computational Intelligence (WCCI 2020) – Glasgow, UK</li>
             </ul>
 
             <h3>Domestic</h3>
             <ul>
-                <li>Third Prize, Competitive Programming Contest - Procon (kyogi) 2021 organized by VAIP - Vietnam Association for Information Processing - FPT, Viet Nam</li>
-                <li>Second Prize, Competitive Programming Contest - Procon (kyogi) 2020 organized by VAIP - Vietnam Association for Information Processing - Can Tho, Viet Nam</li>
-                <li>Second Prize, National Olympiad in Informatics 2019 - Da Nang, Viet Nam</li>
+                <li>Third Prize, Procon (Kyogi) 2021 – Organized by VAIP (Vietnam Association for Information Processing) – FPT, Vietnam</li>
+                <li>Second Prize, Procon (Kyogi) 2020 – Organized by VAIP – Can Tho, Vietnam</li>
+                <li>Second Prize, National Olympiad in Informatics 2019 – Da Nang, Vietnam</li>
             </ul>
         </section>
 
+        <!-- Publications Section -->
         <section>
             <h2>Selected Publications</h2>
             <h3>International Journal</h3>
             <ul>
-                <li><span class="publication-year">2024:</span> Binh Minh Nguyen, Thieu Nguyen, <strong>Quoc-Hien Vu</strong>, Huy Hung Tran, Hoang Hai Tran, Binh Huynh Thi Thanh, Van-Dang Tran, "Dholes Hunting - A Multi-Local Search Algorithm Using Gradient Approximation and Its Application for Blockchain Consensus Problem", IEEE Access (<strong>Q1 - IEEE Access</strong>).</li>
-                <li><span class="publication-year">2023:</span> Binh Minh Nguyen, Thieu Nguyen, <strong>Quoc-Hien Vu</strong>, Huy Hung Tran, Hiep Vo, Do Bao Son, Huynh Thi Thanh Binh, Shui Yu, Zongda Wu, "A Novel Nature-inspired Algorithm for Optimal Task Scheduling in Fog-Cloud Blockchain System", IEEE Internet of Things Journal (<strong>Q1 - IoTJ</strong>).</li>
-                <li><span class="publication-year">2022:</span> <strong>Quoc-Hien Vu</strong>, Cong Dao Tran, Thi Thanh Binh Huynh, "A greedy search based evolutionary algorithm for electric vehicle routing problem", Applied Intelligence (<strong>Q1 - APIN</strong>).</li>
+                <li>
+                    <span class="publication-year">2024:</span> 
+                    Binh Minh Nguyen, Thieu Nguyen, <strong>Quoc-Hien Vu</strong>, Huy Hung Tran, Hoang Hai Tran, Binh Huynh Thi Thanh, Van-Dang Tran. 
+                    &ldquo;Dholes Hunting – A Multi-Local Search Algorithm Using Gradient Approximation and Its Application for Blockchain Consensus Problem,&rdquo; <em>IEEE Access</em> (<strong>Q1</strong>).
+                </li>
+                <li>
+                    <span class="publication-year">2023:</span> 
+                    Binh Minh Nguyen, Thieu Nguyen, <strong>Quoc-Hien Vu</strong>, Huy Hung Tran, Hiep Vo, Do Bao Son, Huynh Thi Thanh Binh, Shui Yu, Zongda Wu. 
+                    &ldquo;A Novel Nature-inspired Algorithm for Optimal Task Scheduling in Fog-Cloud Blockchain System,&rdquo; <em>IEEE Internet of Things Journal</em> (<strong>Q1</strong>).
+                </li>
+                <li>
+                    <span class="publication-year">2022:</span> 
+                    <strong>Quoc-Hien Vu</strong>, Cong Dao Tran, Thi Thanh Binh Huynh. 
+                    &ldquo;A greedy search based evolutionary algorithm for electric vehicle routing problem,&rdquo; <em>Applied Intelligence</em> (<strong>Q1</strong>).
+                </li>
             </ul>
-            
+
             <h3>International Conference</h3>
             <ul>
-                <li><span class="publication-year">2021:</span> Thieu Nguyen, Thang Nguyen, <strong>Quoc-Hien Vu</strong>, Thi Thanh Binh Huynh, Binh Minh Nguyen, "Multi-objective Sparrow Search Optimization for Task Scheduling in Fog-Cloud-Blockchain Systems", IEEE SCC 2021 PC Chairs (<strong>SCC Conference</strong>).</li>
+                <li>
+                    <span class="publication-year">2021:</span> 
+                    Thieu Nguyen, Thang Nguyen, <strong>Quoc-Hien Vu</strong>, Thi Thanh Binh Huynh, Binh Minh Nguyen. 
+                    &ldquo;Multi-objective Sparrow Search Optimization for Task Scheduling in Fog-Cloud-Blockchain Systems,&rdquo; <em>IEEE SCC 2021</em> (PC Chairs).
+                </li>
             </ul>
         </section>
     </div>
